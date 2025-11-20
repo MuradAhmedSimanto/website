@@ -1,414 +1,322 @@
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f8fa;
-  color: #34495e;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-  padding: 20px 10px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-header h1 {
-  font-size: 28px;
-  letter-spacing: 1.5px;
-}
-
-/* Navigation */
-.nav-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #34495e;
-  padding: 10px 0;
-}
-
-.nav-links li {
-  margin: 10px 15px;
-}
-
-.nav-links a {
-  color: #ecf0f1;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #1abc9c;
-}
-
-/* Marquee */
-.marquee-container {
-  background-color: #dfe6e9;
-  padding: 8px 0;
-  font-size: 16px;
-  color: blue;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #1abc9c;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 95%;
-}
-
-/* General Container */
-.container, .content, .school-info, .notice-board, .gallery, .result-section, .admission-form, .contact-section {
-  max-width: 900px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-
-/* Teacher List */
-.teacher-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.teacher {
-  width: 160px;
-  text-align: center;
-  background-color: #fefefe;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.teacher:hover {
-  transform: translateY(-6px);
-}
-
-.teacher img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.teacher p {
-  font-weight: bold;
-  color: #2d3436;
-}
-
-/* Gallery */
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.gallery-grid img {
-  width: 200px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  margin-top: 40px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 22px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links li {
-    margin: 8px 0;
-  }
-
-  .hero h2 {
-    font-size: 24px;
-  }
-
-  .gallery-grid img {
-    width: 90%;
-    height: auto;
-  }
-
-  .teacher-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-container {
-    flex-direction: column;
-  }
-}
-
-.gallery-title {
-  font-size: 26px;
-  font-weight: 700;
-  color: goldenrod; /* অথবা color: #FFD700; */
-  text-align: center;
-  margin-bottom: 20px;
-  border-bottom: 3px solid goldenrod;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff8dc; /* হালকা সোনালী ব্যাকগ্রাউন্ড */
-  border-radius: 10px;
-}
-.gallery-title {
-  color: goldenrod; /* অথবা color: #FFD700; */
-}
-.gallery-title {
-  color: goldenrod; /* টেক্সট গোল্ডেন থাকবে */
-  margin-top: 20px;  /* যতটা দরকার তত বাড়াতে পারো */
-  display: block;
-  text-align: center;
-}
-.admission-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 25px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.admission-form h2 {
+    background: #fffaf1;     /* সফট গোল্ডেন-হোয়াইট ব্যাকগ্রাউন্ড */
+    color: #3a3a3a;          /* ডার্ক গ্রে — পরিষ্কার লেখা */
+    line-height: 1.7;
+    font-size: 16px;
     text-align: center;
-    color: #004080;
-    margin-bottom: 20px;
 }
 
-.admission-form form {
+/* ---------- Header (Slim + Sticky + Sharp Corners) ---------- */
+.header {
+    background: #1abc9c;       /* teal / mint color */
+    padding: 2px 0;            /* extra slim header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.18);
+
+    border-radius: 0;          /* চারকোনা — কোনার কোনো গোল অংশ নেই */
+    margin: 0;                 /* ফুল width বার */
+
+    position: sticky;          /* স্ক্রল করলে টপে আটকে থাকবে */
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 5px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Header texts */
+.header-inner div {
     display: flex;
     flex-direction: column;
-}
-
-.admission-form label {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #333;
-}
-
-.admission-form input,
-.admission-form select {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-.admission-form button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #004080;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.admission-form button:hover {
-    background-color: #0066cc;
-
-}
-
-@media (max-width: 600px) {
-    .result-table th,
-    .result-table td {
-        font-size: 14px;
-        padding: 10px 6px;
-    }
-
-    .result-section h2 {
-        font-size: 20px;
-    }
-}
-.result-section {
-    max-width: 1000px; 
-    margin: auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.result-section h2 {
-    text-align: center;
-    color: #003366;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.table-responsive {
-    overflow-x: auto;
-}
-
-.result-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-}
-
-.result-table th,
-.result-table td {
-    padding: 12px 10px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    font-size: 16px;
-}
-
-.result-table th {
-    background-color: #003366;
-    color: white;
-}
-
-.result-table td strong {
-    color: #004080;
-}
-
-@media (max-width: 600px) {
-    .result-table th,
-    .result-table td {
-        font-size: 14px;
-        padding: 10px 6px;
-    }
-
-    .result-section h2 {
-        font-size: 20px;
-    }
-}
-
-
-
-
-
-.auto-slider {
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-  overflow: hidden;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.slide-track {
-  display: flex;
-  width: calc(600px * 6); /* (এক ছবির width × মোট ছবি সংখ্যা) */
-  animation: scroll 30s linear infinite;
-}
-
-.slide {
-  width: 600px;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-1800px); } /* একেকটা 600px × 3 ছবি = 1800px */
-}
-
-.auto-slider {
-  margin: 4px auto; /* আগের margin: auto ছিল, এখন একটু উপরে নিচে */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-}
-
-/* Navigation Menu Styles */
-.nav-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #34495e;
-  padding: 10px 0;
-}
-
-.nav-links li {
-  margin: 8px 15px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.nav-links i {
-  margin-right: 6px;
-}
-
-/* Hover effect */
-.nav-links a:hover {
-  color: #1abc9c;
-}
-
-/* Responsive for small screens */
-@media (max-width: 600px) {
-  .nav-links {
-    flex-direction: column;
     align-items: center;
-  }
-  .nav-links li {
-    margin: 10px 0;
-  }
 }
+
+.title {
+    font-size: 1.5rem;       /* slim clean look */
+    font-weight: 800;
+    color: #000000;          /* কালো টাইটেল */
+    text-shadow: none;
+}
+
+.sub {
+    font-size: 0.9rem;
+    color: #4b3e24;
+    font-weight: 600;
+}
+
+/* ---------- Join Button ---------- */
+.join-btn {
+    background: linear-gradient(135deg, #fff3b0, #ffe27a);
+    color: #4a3e1c;
+    text-decoration: none;
+    padding: 10px 26px;
+    border-radius: 40px;
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ffe89b, #ffdf57);
+}
+
+/* ---------- Section ---------- */
+section {
+    width: 90%;
+    margin: 40px auto;
+    background: #ffffffd9;   /* কাচের মতো হালকা সাদা */
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #f3d37a;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #d4a017;          /* ক্লাসিক গোল্ড */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+section p {
+    font-size: 1.15rem;
+    color: #333333;          /* খুব পরিষ্কার, শার্প রঙ */
+    margin-bottom: 15px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #d4af37;
+    color: #3e2d12;
+    padding: 22px;
+    font-weight: 600;
+    border-top: 3px solid #f2d77c;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 400px) {
+    .header-inner {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    section {
+        padding: 22px;
+    }
+}
+
+/* ---------- Admin Image ---------- */
+.admin-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;      /* এখন চারকোনা */
+    object-fit: cover;
+}
+
+/* ---------- Rules List ---------- */
+.rules {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rules li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #3e2d12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rules li::before {
+    content: "\f00c";   /* Font Awesome check icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #d4af37;     /* প্রিমিয়াম গোল্ড রঙ */
+    font-size: 1.2rem;
+}
+
+/* ---------- Member Grid ---------- */
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.member {
+    text-align: center;
+}
+
+.m-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37; /* simple golden border */
+    margin-bottom: 8px;
+}
+
+.member h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 5px 0 0;
+    color: #000;
+}
+
+.member .meta {
+    font-size: 0.85rem;
+    color: #6b5a3c;
+}
+
+.welcome-bar {
+    background: #e0fff3;       /* নরম পাতলা mint green ব্যাকগ্রাউন্ড */
+    color: #057a55;            /* গভীর beautiful green টেক্সট */
+    padding: 10px 0;
+    font-size: 1.15rem;        /* একটু বড় */
+    font-weight: 800;          /* মোটা লেখা */
+    border-bottom: 2px solid #0fa678;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.admin-email {
+    background: #fff;
+    padding: 8px 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0b7a5c;
+    border-bottom: 1px solid #c8eadd;
+}
+.title {
+    font-size: 16px; /* হেডলাইন একেবারে ছোট */
+    font-weight: 300;
+}
+.sub {
+    font-size: 12px; /* নিচের সাবটাইটেলও ছোট */
+}
+.msg-btn {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 4px 11px;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 999px;      /* একদম গোল পিল বাটন */
+    text-decoration: none;     /* নিচের দাগ বাদ */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.25s ease-in-out;
+}
+
+.msg-btn:hover {
+    background: linear-gradient(135deg, #16a085, #12856d);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+}
+
+
+.profile {
+    padding-bottom: 35px !important;   /* নিচের ফাঁকা জায়গা কমে যাবে */
+}
+
+
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #0fbf9f;          /* হালকা teal ব্যাকগ্রাউন্ড */
+    color: #ffffff;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.ticker-inner {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker-move 30s linear infinite;
+}
+
+@keyframes ticker-move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.meta {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #0f9d58;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight:300;
+    margin-top: 4px;
+}
+.dev-box {
+    display: inline-block;
+    background: #ffeb80;         /* সুন্দর হলুদ ব্যাকগ্রাউন্ড */
+    border: 2px solid #e0c200;   /* হলুদ বর্ডার */
+    padding: 1px 10px;           /* চিকন বক্স */
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.dev-box a {
+    text-decoration: none;
+    color: #000000;              /* ← ফন্ট কালার এখন BLACK */
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.dev-box:hover {
+    background: #ffe35c;         /* hover এ উজ্জ্বল হলুদ */
+    transform: translateY(-2px);
+    transition: 0.25s;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 1000;
+}
+.profile {
+    background: #f7fffb;
+    border: 1px solid #d3f6ea;
+}
+
+
+
+
+
+
